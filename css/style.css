@@ -9,5 +9,230 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgb(133, 128, 128);
+}
+.main-content{
+  display: flex;
+}
+ul{
+  list-style: none;
+}
+.aside{
+  width: 22%;
+  height: 100vh;
+  background-color: #253052;
+}
+.content{
+  width: 78%;
+  height: 100vh;
+  background-color: #f4f5fd;
+}
+.content__header{
+  width: 100%;
+  height: 60px;
+  border: 1px solid #eee;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: #fff;
+}
+.contact{
+  padding: 32px;
+  display: flex;
+  background-color: #fff;
+}
+.employee-img{
+  width: 35px;
+  height: 35px;
+}
+.imgbox{
+  width: 80px;
+  padding: 16px;
+  margin-right: 32px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title{
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+.text{
+  opacity: 0.5;
+}
+.form-container{
+  margin: 40px;
+  padding: 24px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  background-color: #fff;
+  border-radius: 4px;
+}
+.form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 24px;
+  margin-bottom: 30px;
+}
+.input-box{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.form-input{
+  width: 95%;
+  border: none;
+  outline: none;
+}
+.input-box span{
+  font-size: 22px;
+  padding: 0 12px;
+}
+.add-btn{
+  cursor: pointer;
+  height: 42px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 7px 21px;
+  color: #333996;
+  border: 1px solid rgba(51, 57, 150, 0.5);
+  font-weight: 500;
+}
+.add-btn:hover{
+  background-color: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.component{
+  padding: 16px;
+}
+.list-container{
+  padding: 0px 10px;
+}
+.component{
+  background-color: #e1e3f3;
+}
+.sub-title{
+  font-weight: 600;
+  color: #333996;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.col-md-3{
+  padding: 0;
+}
+.col-md-2{
+  padding: 0;
+}
+.sub-title.active{
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.bx-up-arrow-alt{
+  margin-left: 6px;
+}
+.btn-closed{
+  cursor: pointer;
+  border: none;
+  padding: 0 4px;
+  margin: 6px;
+  color: #f83145;
+  background-color: #ffe2e3;
+  font-size: 28px;
+}
+.modal-header{
+  padding: 16px 24px;
+}
+.modal-content{
+  padding: 16px;
+}
+.modal-form{
+  display: flex;
+justify-content: space-between;
+}
+.modal-body{
+  padding: 16px 24px;
+}
+.form-inner{
+  display: flex;
+  flex-direction: column;
+}
+.form-inner{
+  width: 48%;
+}
+.list-item{
+  padding: 20px 16px;
+  font-weight: 300;
+  color: #000000de;
+  border-bottom: 1px solid #ccc;
+}
+.name-list{
+  padding: 0;
+  margin: 0;
+}
+.modal-input{
+  padding: 18.5px 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+.gender-div{
+  margin-bottom: 16px;
+}
+.gender-par{
+  margin-bottom: 6px;
+}
+.gender-input{
+  margin-right: 16px;
+}
+.btn-box{
+  margin: 16px 0;
+}
+.btn-submit{
+  cursor: pointer;
+  padding: 8px 22px;
+  color: #fff;
+  background-color: #333996;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  font-weight: 500;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.btn-reset{
+  cursor: pointer;
+  padding: 8px 22px;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  background-color: #e0e0e0;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.employed-input{
+  margin-right: 10px;
+}
+.actions{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  height: 65px;
+}
+.edit-btn{
+  padding: 6px 8px;
+  margin-right: 10px;
+  background-color: #3c44b126;
+  color: #353b97;
+  border: none;
+  font-size: 20px;
+}
+.delete-btn{
+  padding: 6px 8px;
+  margin-right: 10px;
+  background-color: #ffe2e3;
+  color: #f83f4f;
+  border: none;
+  font-size: 20px;
 }

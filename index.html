@@ -7,16 +7,198 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  
- </div>
+<div class="main-content">
+  <aside class="aside">
+
+  </aside>
+  <div class="content">
+    <div class="content__header"> </div>
+    <div class="contact">
+      <div class="imgbox">
+        <img class="employee-img" src="images/employee.png" alt="employee">
+      </div>
+      <div>
+        <h3 class="title">New Employee</h3>
+        <p class="text">Form design with validation</p>
+      </div>
+    </div>
+    <div class="form-container">
+      <form class="form">
+        <div class="input-box">
+          <span><i class='bx bx-search'></i></span>
+          <input class="form-input" type="text">
+        </div>
+         <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="add-btn"> + Add New</button>
+      </form>
+      <div class="list-container row">
+        <div class="col-md-3">
+          <div class="component">
+            <p class="sub-title active">Employee Name <i class='bx bx-up-arrow-alt'></i></p>
+          </div>
+          <ul id="nameList" class="name-list">
+
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <div class="component">
+            <p class="sub-title">Email Address (Personal)</p>
+          </div>
+          <ul id="emailList" class="name-list">
+
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <div class="component">
+            <p class="sub-title">Mobile Number</p>
+          </div>
+          <ul id="numberList" class="name-list">
+            
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <div class="component">
+            <p class="sub-title">Department</p>
+          </div>
+          <ul id="departmentList" class="name-list">
+            
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <div class="component">
+            <p class="sub-title">Actions</p>
+          </div>
+          <div class="actions">
+            <div id="actionBox" class="action-box"> </div>
+            <div id="deleteBox" class="action-box"> </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Employee form</h5>
+        <button type="button" class="btn-closed" data-bs-dismiss="modal" ><i class='bx bx-x'></i></button>
+      </div>
+      <div class="modal-body">
+       <form id="modalForm" class="modal-form">
+         <div class="form-inner">
+       
+          <input type="text" id="fullName" class="modal-input" placeholder="Full Name">
+         
+          <input type="email" id="email" class="modal-input" placeholder="Email">
+
+          <input type="phone" id="mobile" class="modal-input" placeholder="Mobile">
+
+          <input type="text" id="city" class="modal-input" placeholder="City">
+         </div>
+       <div class="form-inner">
+        <p class="gender-par">Gender:</p>
+        <div class="gender-div">
+           <input  type="radio" id="huey" name="drone"  checked>
+           <label class="gender-input" for="huey">Male</label>
+           <input  type="radio" id="dewey" name="drone">
+           <label class="gender-input" for="dewey">Female</label>
+           <input  type="radio" id="louie" name="drone">
+           <label class="gender-input" for="louie">Other</label>
+         </div>
+
+
+        <input class="modal-input" list="department-list" name="browser" id="department" placeholder="Department">
+        <datalist id="department-list">
+          <option value="None">
+          <option value="Development">
+          <option value="Marketing">
+          <option value="Accounting">
+          <option value="HR">
+        </datalist>
+         <input type="date" id="date" class="modal-input ">
+         <label for="employed"><input type="checkbox" class="employed-input">Permanent Employee</label>
+
+         <div class="btn-box">
+           <button data-bs-dismiss="modal" type="submit" class="btn btn-submit">Submit</button>
+           <button class="btn btn-reset">Reset</button>
+         </div>
+       </div>
+     
+       </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Employee form</h5>
+        <button type="button" class="btn-closed" data-bs-dismiss="modal" ><i class='bx bx-x'></i></button>
+      </div>
+      <div class="modal-body">
+       <form id="modalForm" class="modal-form">
+         <div class="form-inner">
+       
+          <input type="text" id="fullName" class="modal-input" placeholder="Full Name">
+         
+          <input type="email" id="email" class="modal-input" placeholder="Email">
+
+          <input type="phone" id="mobile" class="modal-input" placeholder="Mobile">
+
+          <input type="text" id="city" class="modal-input" placeholder="City">
+         </div>
+       <div class="form-inner">
+        <p class="gender-par">Gender:</p>
+        <div class="gender-div">
+           <input  type="radio" id="huey" name="drone"  checked>
+           <label class="gender-input" for="huey">Male</label>
+           <input  type="radio" id="dewey" name="drone">
+           <label class="gender-input" for="dewey">Female</label>
+           <input  type="radio" id="louie" name="drone">
+           <label class="gender-input" for="louie">Other</label>
+         </div>
+
+
+        <input class="modal-input" list="department-list" name="browser" id="department" placeholder="Department">
+        <datalist id="department-list">
+          <option value="None">
+          <option value="Development">
+          <option value="Marketing">
+          <option value="Accounting">
+          <option value="HR">
+        </datalist>
+         <input type="date" id="date" class="modal-input ">
+         <label for="employed"><input type="checkbox" class="employed-input">Permanent Employee</label>
+
+         <div class="btn-box">
+           <button class="btn btn-submit">Save</button>
+           <button class="btn btn-reset">Reset</button>
+         </div>
+       </div>
+     
+       </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="js/main.js">
   </script>
 </body>
